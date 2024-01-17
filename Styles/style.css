@@ -1,0 +1,79 @@
+body {
+    margin: 0; 
+    height: 100vh;
+    background-image: linear-gradient( #87CEEB, #1E90FF);
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+.titleSection {
+    text-align: center;
+    font-family: 'Rowdies', sans-serif;
+    font-size: 100px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.header {
+    background-color: #A9A9A9;
+}
+
+.navbar-nav li {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.startSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offcanvas-body li {
+    font-size: 22px;
+}
+
+.offcanvas-title {
+    font-size: 30px;
+}
+
+.center {
+    margin-top: 200px;
+}
+
+.strt-btn {
+    margin-top: 30px;
+    width: 250px;
+    height: 100px;
+    font-size: 50px;
+    font-family: 'Rowdies', sans-serif;
+}
+
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Rowdies', sans-serif;
+}
+
+
+.centerText {
+    max-width: 900px;
+    background-color: rgba(235, 215, 215, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+
+.tutitle {
+    font-size: 80px;
+    text-align: center;
+}
+
+/* font-family: 'Rowdies', sans-serif; */
