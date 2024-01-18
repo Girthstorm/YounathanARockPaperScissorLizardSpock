@@ -10,7 +10,7 @@ body {
 .titleSection {
     text-align: center;
     font-family: 'Rowdies', sans-serif;
-    font-size: 100px;
+    font-size: 120px;
 }
 
 .navbar-brand {
@@ -69,11 +69,37 @@ body {
     padding: 15px;
 }
 
-
-
 .tutitle {
     font-size: 80px;
     text-align: center;
+    font-family: 'Rowdies', sans-serif;
 }
+
+.btnSize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSize label {
+    width: 300px;
+    height: 90px;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.settingsBox {
+    max-width: 1200px;
+    background-color: rgba(235, 215, 215, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.moveDwn {
+    padding-top: 50px;
+}
+
+.image-center{}
 
 /* font-family: 'Rowdies', sans-serif; */
