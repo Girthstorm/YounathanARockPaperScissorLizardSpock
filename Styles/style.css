@@ -1,10 +1,10 @@
 body {
     background: linear-gradient(to bottom, #001F3F, #5E2CA5, #9B59B6, #E91E63);
-  margin: 0;
-  height: 100vh;
-  
-  color: #fff; /* Set text color to white for better visibility */
-  font-family: 'Arial', sans-serif;
+    margin: 0;
+    height: 100vh;
+    color: #fff;
+    /* Set text color to white for better visibility */
+    font-family: 'Arial', sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -31,7 +31,8 @@ body {
 }
 
 .nav-link {
-    color: #fff !important; /*Aidan check this our later(get rid of important somehow). I know its not best to use important but I didn't exactly know what to do at the moment. */
+    color: #fff !important;
+    /*Aidan check this our later(get rid of important somehow). I know its not best to use important but I didn't exactly know what to do at the moment. */
 }
 
 .startSection {
@@ -112,7 +113,7 @@ body {
     width: 400px;
     height: 120px;
     font-size: 60px;
-    
+
 }
 
 .smlerImg {
@@ -132,12 +133,12 @@ body {
     justify-content: space-between;
 }
 
-.player1Btns img{
+.player1Btns img {
     margin-left: 35px;
     max-width: 120px;
 }
 
-.player2Btns img{
+.player2Btns img {
     margin-right: 35px;
     max-width: 120px;
 }
@@ -148,6 +149,17 @@ body {
 
 .player2Btns p {
     font-size: 30px;
+}
+
+.doneBtn button {
+    margin-top: 30px;
+    width: 300px;
+    height: 100px;
+    font-size: 60px;
+}
+
+.pointerThang :hover {
+    cursor: pointer;
 }
 
 /* font-family: 'Rowdies', sans-serif; */
