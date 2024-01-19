@@ -1,9 +1,11 @@
 body {
-    margin: 0; 
-    height: 100vh;
-    background-image: linear-gradient( #87CEEB, #1E90FF);
+    background: linear-gradient(to bottom, #001F3F, #5E2CA5, #9B59B6, #E91E63);
+  margin: 0;
+  height: 100vh;
+  
+  color: #fff; /* Set text color to white for better visibility */
+  font-family: 'Arial', sans-serif;
     background-repeat: no-repeat;
-
     background-attachment: fixed;
 }
 
@@ -15,15 +17,21 @@ body {
 
 .navbar-brand {
     font-size: 40px;
+    color: #fff;
 }
 
 .header {
-    background-color: #A9A9A9;
+    background-color: #004080;
+    color: #fff;
 }
 
 .navbar-nav li {
     margin-left: 10px;
     font-size: 25px;
+}
+
+.nav-link {
+    color: #fff !important; /*Aidan check this our later(get rid of important somehow). I know its not best to use important but I didn't exactly know what to do at the moment. */
 }
 
 .startSection {
@@ -100,6 +108,46 @@ body {
     padding-top: 50px;
 }
 
-.image-center{}
+.strt {
+    width: 400px;
+    height: 120px;
+    font-size: 60px;
+    
+}
+
+.smlerImg {
+    max-width: 400px;
+}
+
+.shrink {
+    font-size: 50px;
+}
+
+.smlerSmlImg {
+    max-width: 300px;
+}
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player1Btns img{
+    margin-left: 35px;
+    max-width: 120px;
+}
+
+.player2Btns img{
+    margin-right: 35px;
+    max-width: 120px;
+}
+
+.player1Btns p {
+    font-size: 30px;
+}
+
+.player2Btns p {
+    font-size: 30px;
+}
 
 /* font-family: 'Rowdies', sans-serif; */

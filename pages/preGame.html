@@ -42,37 +42,34 @@
     <!-- Start Game Selection  -->
     <div class="btnSize moveDwn ">
         <div class="settingsBox">
-            <div class="preGameTitle">
-                <p class="tutitle">Select Mode & Score</p>
-            </div>
-            <div class="gameMode btnSize">
-                <div class="btn-group-lg" role="group" aria-label="Basic radio toggle button group">
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio1">1 V 1 (local)</label>
-
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio2">1 V CPU</label>
-                </div>
-            </div>
             <p class="tutitle">Select Scoring System</p>
             <div class="gameScore btnSize">
                 <div class="btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">Best Of 3</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">Best of 5</label>
+
                     <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio3">Best Of 3</label>
-
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio4">Best of 5</label>
-
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btnradio5">Best of 7</label>
+                    <label class="btn btn-outline-primary" for="btnradio3">Best of 7</label>
                 </div>
             </div>
+            <div class="preGameTitle">
+                <p class="tutitle">Select Mode</p>
+            </div>
+            <div class="gameMode btnSize d-flex justify-content-between ">
+                <a id="switchPage" href="../pages/1v1page.html"><button type="button" class="btn btn-success strt">Start 1v1</button></a>
+                <a id="switchPage" href="../pages/1vCPUpage.html"><button type="button" class="btn btn-success strt">Start 1vCPU</button></a>
+            </div>
+            
         </div>
     </div>
     <div class="btnSize moveDwn">
-        <img class="" src="../Assets/RockPaperScissorsLizardSpock.jpg"
+        <img class="smlerImg" src="../Assets/RockPaperScissorsLizardSpock.jpg"
             alt="Chart on combinations for Rock Paper Scissor Lizard Spock">
     </div>
+    
 
 
     <!-- End Game Selection -->

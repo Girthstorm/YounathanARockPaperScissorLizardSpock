@@ -1,1 +1,1 @@
-alert
+let winnerTxt = document.getElementById('winnerTxt');
