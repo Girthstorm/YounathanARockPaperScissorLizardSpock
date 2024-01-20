@@ -127,7 +127,7 @@ function DoneBtn(){
                 console.log(p2Wins);
                 console.log(maxScore);
                 player2Score.innerText = p2Wins;
-            if(p1Wins >= maxScore){
+            if(p2Wins >= maxScore){
                 gameEnd();
                 
             }
