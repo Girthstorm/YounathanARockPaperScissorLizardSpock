@@ -135,23 +135,20 @@ function DoneBtn(){
     }
 }
 
-// function whoWon(){
-//     if(p1Wins == maxScore && p1Wins > p2Wins){
-//         winnerTxt.innerText = "PLAYER 1";
-//     } else {
-//         winnerTxt.innerText = "PLAYER 2";
-//     }
-// }
-
-
-
-function gameEnd(){
-    window.location.href = 'winnerPage.html';
+whoWon();
+function whoWon(){
     if(p1Wins == maxScore && p1Wins > p2Wins){
         winnerTxt.innerText = "PLAYER 1";
     } else {
         winnerTxt.innerText = "PLAYER 2";
     }
+}
+
+let p1Winning = "PLAYER 1";
+let p2Winning = "PLAYER 2";
+
+function gameEnd(){
+    window.location.href = 'winnerPage.html';
 }
 
 function resetMaxScore(){
