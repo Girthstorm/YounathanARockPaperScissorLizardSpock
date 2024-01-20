@@ -128,7 +128,7 @@ function DoneBtn(){
                 console.log(maxScore);
                 player2Score.innerText = p2Wins;
             if(p2Wins >= maxScore){
-                gameEnd();
+                gameEnd2();
                 
             }
         }
@@ -149,6 +149,9 @@ let p2Winning = "PLAYER 2";
 
 function gameEnd(){
     window.location.href = 'winnerPage.html';
+}
+function gameEnd2(){
+    window.location.href = 'winnerPage2.html';
 }
 
 function resetMaxScore(){
