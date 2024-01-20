@@ -157,3 +157,49 @@ function gameEnd2(){
 function resetMaxScore(){
     localStorage.setItem("Max Score", 1);
 }
+
+async function cpuPlay(){
+    const response = await fetch('https://scottsrpsls.azurewebsites.net/api/RockPaperScissors/GetRandomOption');
+    const data = await response.text();
+    console.log(data);
+    user2Choice = data;
+    console.log(user2Choice);
+}
+
+function CPUDoneBtn(){
+    cpuPlay()
+    maxScore = localStorage.getItem('Max Score')
+    if (userChoice === user2Choice) {
+        console.log("Tie");
+    } else {
+        // Check for user's choice and determine the winner
+        if (
+            (userChoice === "Rock" && (user2Choice === "Scissors" || user2Choice === "Lizard")) ||
+            (userChoice === "Paper" && (user2Choice === "Rock" || user2Choice === "Spock")) ||
+            (userChoice === "Scissors" && (user2Choice === "Paper" || user2Choice === "Lizard")) ||
+            (userChoice === "Lizard" && (user2Choice === "Spock" || user2Choice === "Paper")) ||
+            (userChoice === "Spock" && (user2Choice === "Scissors" || user2Choice === "Rock"))
+        ) {
+            console.log("You win!");
+                p1Wins++; 
+                console.log(p1Wins);
+                console.log(maxScore);
+                player1Score.innerText = p1Wins;
+            if(p1Wins >= maxScore){
+                gameEnd();
+                
+            }
+            
+        } else {
+            console.log("You lose!");
+            p2Wins++; 
+                console.log(p2Wins);
+                console.log(maxScore);
+                player2Score.innerText = p2Wins;
+            if(p2Wins >= maxScore){
+                gameEnd2();
+                
+            }
+        }
+    }
+}

@@ -50,17 +50,17 @@
     <!-- End top text -->
     <!-- Start choices section -->
     <div class="player1Btns pointerThang d-flex justify-content-center align-content-center mt-5">
-        <img id="btn1" src="../Assets/Rock.svg" alt="Rock hand gesture">
-        <img id="btn2" src="../Assets/Paper.svg" alt="Paper hand gesture">
-        <img id="btn3" src="../Assets/Scissors.svg" alt="Scissor hand gesture">
-        <img id="btn4" src="../Assets/Lizard.svg" alt="Lizard hand gesture">
-        <img id="btn5" src="../Assets/Spock.svg" alt="Spock hand gesture">
+        <img onclick="Rock()" id="btn1" src="../Assets/Rock.svg" alt="Rock hand gesture">
+            <img onclick="Paper()" id="btn2" src="../Assets/Paper.svg" alt="Paper hand gesture">
+            <img onclick="Scissors()" id="btn3" src="../Assets/Scissors.svg" alt="Scissor hand gesture">
+            <img onclick="Lizard()" id="btn4" src="../Assets/Lizard.svg" alt="Lizard hand gesture">
+            <img onclick="Spock()" id="btn5" src="../Assets/Spock.svg" alt="Spock hand gesture">
     </div>
     <div class="player1Btns">
         <p class="text-center mt-4">Score: <span id="player1Score">0</span></p>
     </div>
     <div class="doneBtn d-flex justify-content-center">
-        <button type="button" id="DoneBtn1vCPU" class="btn btn-success">Done</button>
+        <button type="button" onclick="CPUDoneBtn()"  id="DoneBtn1vCPU" class="btn btn-success">Done</button>
     </div>
     <!-- End Choices section -->
 
