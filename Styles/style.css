@@ -162,4 +162,20 @@ body {
     cursor: pointer;
 }
 
+.celebrate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celebrate img {
+    max-width: 400px;
+    margin-right: 10px;
+}
+
+.playAgain button {
+    font-size: 60px;
+    padding: 20px;
+}
+
 /* font-family: 'Rowdies', sans-serif; */

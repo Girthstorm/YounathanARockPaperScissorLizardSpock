@@ -14,11 +14,11 @@
 </head>
 
 <body>
-<!-- Start Navbar -->
+    <!-- Start Navbar -->
     <div class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">R.P.S.L.S</a>
+                <a class="navbar-brand" onclick="resetMaxScore()" href="../index.html">R.P.S.L.S</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,8 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link active" onclick="resetMaxScore()" aria-current="page"
+                                href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" data-bs-toggle="offcanvas" href="#offcanvasExample"
@@ -37,31 +38,31 @@
             </div>
         </nav>
     </div>
-<!-- End Navbar -->
+    <!-- End Navbar -->
 
-<!-- Start top text -->
-<div class="topTxt tutitle mt-3">
-    <p>1v1CPU Game Start!</p>
-    <p class="shrink ">Good Luck!</p>
-    <img class="mt-4 smlerSmlImg" src="../Assets/RockPaperScissorsLizardSpock.jpg"
-        alt="Chart on combinations for Rock Paper Scissor Lizard Spock">
-</div>
-<!-- End top text -->
-<!-- Start choices section -->
-<div class="player1Btns pointerThang d-flex justify-content-center align-content-center mt-5">
-    <img id="btn1" src="../Assets/Rock.svg" alt="Rock hand gesture">
-    <img id="btn2" src="../Assets/Paper.svg" alt="Paper hand gesture">
-    <img id="btn3" src="../Assets/Scissors.svg" alt="Scissor hand gesture">
-    <img id="btn4" src="../Assets/Lizard.svg" alt="Lizard hand gesture">
-    <img id="btn5" src="../Assets/Spock.svg" alt="Spock hand gesture">
-</div>
-<div class="player1Btns">
-    <p class="text-center mt-4">Score: <span id="player1Score">0</span></p>
-</div>
-<div class="doneBtn d-flex justify-content-center">
-    <button type="button" id="DoneBtn1v1" class="btn btn-success">Done</button>
-</div>
-<!-- End Choices section -->
+    <!-- Start top text -->
+    <div class="topTxt tutitle mt-3">
+        <p>1v1CPU Game Start!</p>
+        <p class="shrink ">Good Luck!</p>
+        <img class="mt-4 smlerSmlImg" src="../Assets/RockPaperScissorsLizardSpock.jpg"
+            alt="Chart on combinations for Rock Paper Scissor Lizard Spock">
+    </div>
+    <!-- End top text -->
+    <!-- Start choices section -->
+    <div class="player1Btns pointerThang d-flex justify-content-center align-content-center mt-5">
+        <img id="btn1" src="../Assets/Rock.svg" alt="Rock hand gesture">
+        <img id="btn2" src="../Assets/Paper.svg" alt="Paper hand gesture">
+        <img id="btn3" src="../Assets/Scissors.svg" alt="Scissor hand gesture">
+        <img id="btn4" src="../Assets/Lizard.svg" alt="Lizard hand gesture">
+        <img id="btn5" src="../Assets/Spock.svg" alt="Spock hand gesture">
+    </div>
+    <div class="player1Btns">
+        <p class="text-center mt-4">Score: <span id="player1Score">0</span></p>
+    </div>
+    <div class="doneBtn d-flex justify-content-center">
+        <button type="button" id="DoneBtn1vCPU" class="btn btn-success">Done</button>
+    </div>
+    <!-- End Choices section -->
 
 
 
@@ -88,12 +89,15 @@
                         <li>Spock vaporizes rock.</li>
                         <li>And as it always has, rock crushes scissors.</li>
                     </ul>
-                    <iframe width="370" height="270" src="https://www.youtube.com/embed/LW8niMvuVHg?si=WKc6ZkeQr8c8zf2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="370" height="270" src="https://www.youtube.com/embed/LW8niMvuVHg?si=WKc6ZkeQr8c8zf2v"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
-<!-- End Offcanvas -->
+    <!-- End Offcanvas -->
 
 
 
