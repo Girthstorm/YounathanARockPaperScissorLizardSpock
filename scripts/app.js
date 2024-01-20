@@ -128,30 +128,30 @@ function DoneBtn(){
                 console.log(maxScore);
                 player2Score.innerText = p2Wins;
             if(p2Wins >= maxScore){
-                gameEnd();
+                gameEnd2();
                 
             }
         }
     }
 }
 
-// function whoWon(){
-//     if(p1Wins == maxScore && p1Wins > p2Wins){
-//         winnerTxt.innerText = "PLAYER 1";
-//     } else {
-//         winnerTxt.innerText = "PLAYER 2";
-//     }
-// }
-
-
-
-function gameEnd(){
-    window.location.href = 'winnerPage.html';
+whoWon();
+function whoWon(){
     if(p1Wins == maxScore && p1Wins > p2Wins){
         winnerTxt.innerText = "PLAYER 1";
     } else {
         winnerTxt.innerText = "PLAYER 2";
     }
+}
+
+let p1Winning = "PLAYER 1";
+let p2Winning = "PLAYER 2";
+
+function gameEnd(){
+    window.location.href = 'winnerPage.html';
+}
+function gameEnd2(){
+    window.location.href = 'winnerPage2.html';
 }
 
 function resetMaxScore(){
