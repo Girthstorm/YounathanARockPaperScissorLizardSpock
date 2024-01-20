@@ -154,6 +154,10 @@ function gameEnd2(){
     window.location.href = 'winnerPage2.html';
 }
 
+function gameEnd3(){
+    window.location.href = 'winnerPage3.html';
+}
+
 function resetMaxScore(){
     localStorage.setItem("Max Score", 1);
 }
@@ -197,7 +201,7 @@ function CPUDoneBtn(){
                 console.log(maxScore);
                 player2Score.innerText = p2Wins;
             if(p2Wins >= maxScore){
-                gameEnd2();
+                gameEnd3();
                 
             }
         }
